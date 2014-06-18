@@ -1,13 +1,31 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="ls-theme-blue ls-screen-md">
   <head>
     <meta charset="UTF-8">
     <title></title>
+    <link href="http://assets.systemintegration.locaweb.com.br/locastyle/3.0.0-beta1/stylesheets/locastyle.css" media="screen" rel="stylesheet">
+    <link href="/style.css" media="screen" rel="stylesheet">
+    <script data-main="scripts/main" src="scripts/lib/require.js"></script>
   </head>
   <body>
-    <pre></pre>
-    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/application.js"></script>
+    <div class="ls-topbar">
+      <div class="ls-notification-topbar">
+        <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
+          <nav class="ls-dropdown-nav ls-user-menu">
+            <ul>
+              <li>
+                <a href="/logout" class="help-suggestions ico-help-circle hidden-xs"><strong>Sair</strong>strong></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <span class="ls-show-sidebar ls-ico-menu"></span>
+      <span class="ls-show-notifications ls-ico-question"></span>
+      <h1 class="ls-brand-name"><a class="ls-ico-text" href="#">Log - </a></h1>
+    </div>
+    <main class="ls-main">
+      <pre></pre>
+    </main>
   </body>
 </html>
