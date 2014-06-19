@@ -11,8 +11,8 @@ define(
 
       function init() {
         websocket
-          .on('data', function(data) {
-            $('pre').append(String.fromCharCode.apply(null, new Uint8Array(data)));
+          .on('message', function(message) {
+             $("pre").append(message.tail.join('<br/>'));
           });
       }
 
