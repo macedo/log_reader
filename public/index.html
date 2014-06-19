@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title></title>
-    <link href="http://assets.systemintegration.locaweb.com.br/locastyle/3.0.0-beta1/stylesheets/locastyle.css" media="screen" rel="stylesheet">
+    <link href="http://assets.locaweb.com.br/locastyle/3.0.0-beta1/stylesheets/locastyle.css" media="screen" rel="stylesheet">
     <link href="/style.css" media="screen" rel="stylesheet">
     <script data-main="scripts/main" src="scripts/lib/require.js"></script>
   </head>
@@ -11,20 +11,16 @@
     <div class="ls-topbar">
       <div class="ls-notification-topbar">
         <div data-ls-module="dropdown" class="ls-dropdown ls-user-account">
-          <nav class="ls-dropdown-nav ls-user-menu">
-            <ul>
-              <li>
-                <a href="/logout" class="help-suggestions ico-help-circle hidden-xs"><strong>Sair</strong>strong></a>
-              </li>
-            </ul>
-          </nav>
+          <div class="ls-alerts-list">
+            <a class="ls-ico-lamp" id="turn-off"><span>Turn off</span></a>
+          </div>
         </div>
       </div>
       <span class="ls-show-sidebar ls-ico-menu"></span>
       <span class="ls-show-notifications ls-ico-question"></span>
       <h1 class="ls-brand-name"><a class="ls-ico-text" href="#">Log - </a></h1>
     </div>
-    <main class="ls-main">
+    <main class="ls-main ls-no-main-bg">
       <pre></pre>
     </main>
   </body>

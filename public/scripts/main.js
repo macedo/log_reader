@@ -8,10 +8,12 @@ require.config({
 
 require(
   [
+    'control',
     'log_view'
   ],
 
-  function(LogView) {
+  function(Control, LogView) {
+    Control.init();
     LogView.init();
   }
 );

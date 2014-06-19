@@ -1,4 +1,16 @@
 .ls-main {
   margin-left: 0;
   padding: 80px 20px;
+  height: auto;
+  transition: background 1.5s;
+}
+
+.ls-ico-lamp {
+  color: white !important;
+}
+
+.off {
+  background: black !important;
+  color: white;
+  transition: background 1.5s;
 }

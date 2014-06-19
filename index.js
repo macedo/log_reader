@@ -13,7 +13,7 @@ server.listen(port, function () {
 app.use(express.static(__dirname + '/public'));
 
 io.on('connection', function(socket) {
-  var childProc = spawn('tail', ['-f', '/home/macedo/Workspace/iaas-api/log/development.log']);
+  var childProc = spawn('tail', ['-f', '/Users/rafaelmacedo/Development/tasklist/log/development.log']);
   childProc.stdout.on('data', function(data) {
     socket.emit("data", data);
   });
